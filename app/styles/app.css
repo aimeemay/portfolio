@@ -1,0 +1,143 @@
+/******************************************************************************/
+/* INDEX PAGE */
+/******************************************************************************/
+title {
+    font-family: Pacifico;
+    font-size: 100px;
+    color: #242424;
+    letter-spacing: 0px;
+    display: block;
+    text-align: center;
+}
+
+p {
+    font-family: SourceSansPro-Regular;
+    font-size: 20px;
+    color: #242424;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.cover {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(246, 255, 0, 0.46);
+    position: absolute;
+    z-index: 10;
+
+}
+
+
+
+video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url('/assets/cover-01.png') no-repeat;
+    background-size: cover;
+}
+
+.center {
+    /* cool way to center children */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* center end */
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+}
+
+.center > div {
+    position: relative;
+}
+
+.circle {
+    width: 64px;
+    height: 64px;
+    margin-left: -32px;
+    border: 1.5px solid #242424;
+    border-radius: 50%;
+    left: 50%;
+
+    bottom: -100px;
+    position: absolute;
+    font-family: SourceSansPro-Light;
+    font-size: 44px;
+    color: #242424;
+    line-height: 64px;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+}
+
+.center p {
+    max-width: 540px;
+}
+
+/******************************************************************************/
+/* PORTFOLIO PAGE */
+/******************************************************************************/
+title.small {
+    font-size: 30px;
+    color: #F1C21C;
+    cursor: pointer;
+}
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    width: 650px;
+    margin: 0 auto;
+}
+.item {
+    /*max-width: 300px;*/
+    flex: 0 0 50%;
+    padding: 15px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.item .number {
+    font-family: SourceSansPro-Black;
+    font-size: 34px;
+    color: #D9D9D9;
+    letter-spacing: 0px;
+    /*float: left;*/
+}
+.item .title {
+    font-family: SourceSansPro-Black;
+    font-size: 20px;
+    color: #242424;
+    letter-spacing: 0px;
+    /*margin-top: 12px;*/
+    text-transform: uppercase;
+}
+.item .desc {
+    font-family: SourceSansPro-It;
+    font-size: 16px;
+    color: #242424;
+    line-height: 22px;
+}
+.item .desc, .item .title {
+    /*margin-left: 60px;*/
+}
+
+.item img {
+    max-width: 100%;
+}
