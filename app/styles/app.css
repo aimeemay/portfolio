@@ -9,6 +9,14 @@
     bottom: 0px;
 }
 
+.liquid-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
 /******************************************************************************/
 /* INDEX PAGE */
 /******************************************************************************/
@@ -148,6 +156,7 @@ title.small {
     padding: 15px;
     padding-bottom: 30px;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .item .number {

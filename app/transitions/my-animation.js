@@ -37,15 +37,7 @@ export default function(opts) {
 
                 resolve();
             })
-
-
-
-
         });
-
-
-
-
     })
 
 

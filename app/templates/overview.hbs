@@ -11,7 +11,7 @@
 
     <div class="items">
         {{#each model as |item|}}
-            <div class="item">
+            {{#link-to "item" item.number class='item' tagName="div"}}
                 <img src="{{item.cover}}" alt="" />
                 <div class="number">
                     {{item.number}}
@@ -23,7 +23,7 @@
                 <div class="desc">
                     {{item.desc}}
                 </div>
-            </div>
+            {{/link-to}}
         {{/each}}
     </div>
 </div>
