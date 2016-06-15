@@ -6,6 +6,7 @@ export default Ember.Controller.extend({
             // debugger;
             var video = document.getElementById("bgvid");
             video.play();
+            video.volume = 0;
             video.onended = function(){
                 // debugger
                 console.log('video replay');

@@ -1,28 +1,29 @@
 {{outlet}}
 
 
+<div class="scroll">
+    {{#link-to 'index' tagName="title" class="small"}}
+        Say Hello
+    {{/link-to}}
+    <p>
+        Portfolio by <b>Aimee Leong</b>
+    </p>
 
-{{#link-to 'index' tagName="title" class="small"}}
-    Say Hello
-{{/link-to}}
-<p>
-    Portfolio by <b>Aimee Leong</b>
-</p>
+    <div class="items">
+        {{#each model as |item|}}
+            <div class="item">
+                <img src="{{item.cover}}" alt="" />
+                <div class="number">
+                    {{item.number}}
+                </div>
+                <div class="title">
+                    {{item.title}}
+                </div>
 
-<div class="items">
-    {{#each model as |item|}}
-        <div class="item">
-            <img src="{{item.cover}}" alt="" />
-            <div class="number">
-                {{item.number}}
+                <div class="desc">
+                    {{item.desc}}
+                </div>
             </div>
-            <div class="title">
-                {{item.title}}
-            </div>
-
-            <div class="desc">
-                {{item.desc}}
-            </div>
-        </div>
-    {{/each}}
+        {{/each}}
+    </div>
 </div>
